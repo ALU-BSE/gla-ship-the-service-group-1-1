@@ -1,4 +1,6 @@
 from flask import jsonify
+
+
 def register_routes(app):
     @app.route("/health")
     def health():
@@ -7,5 +9,7 @@ def register_routes(app):
     @app.route("/districts")
     def districts():
         return jsonify({
-            "districts": ["Westlands", "Kibera", "Karen", "Eastleigh", "Kasarani"]
+            "districts": [
+                "Westlands", "Kibera", "Karen", "Eastleigh", "Kasarani"
+            ]
         })
