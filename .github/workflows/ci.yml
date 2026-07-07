@@ -24,7 +24,7 @@ jobs:
       - run: uv venv
       - run: uv pip install -r requirements.txt
 
-      - run: uv run flake8 app/tests/
+      - run: uv run flake8 app/ tests/
 
       - run: uv run pytest
 
