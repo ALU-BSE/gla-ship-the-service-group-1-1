@@ -19,7 +19,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - uses: astral-sh/setup-uv@v8
+      - uses: astral-sh/setup-uv@v1
 
       - run: uv venv
       - run: uv pip install -r requirements.txt
